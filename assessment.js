@@ -14,7 +14,7 @@ assessmentButton.addEventListener(
     }
 
     //診断結果表示エリアの作成
-    resultDivision.innerText = " ";
+    resultDivision.innerHTML = '';
     //headerDivisionの作成
     const headerDivision = document.createElement('div')
     headerDivision.setAttribute('class' , 'card-header text-bg-primary');
@@ -38,7 +38,7 @@ assessmentButton.addEventListener(
     resultDivision.appendChild(bodyDivision);
 
     //X投稿ボタンの作成
-    tweetDivision.innerText = '';
+    tweetDivision.innerHTML = '';
     const anchor = document.createElement('a')
     const hrefValue ='https://x.com/intent/tweet?button_hashtag=' + 
     encodeURIComponent('あなたのいいところ') + 
